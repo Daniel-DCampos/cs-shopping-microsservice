@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CSShopping.ProductAPI/bin/Debug/net6.0
+/CSShopping.ProductAPI/obj/Debug/net6.0
+/CSShopping.ProductAPI/obj
+/.vs
+/CSShopping.UI.Web/bin/Debug/net6.0
+/CSShopping.UI.Web/obj

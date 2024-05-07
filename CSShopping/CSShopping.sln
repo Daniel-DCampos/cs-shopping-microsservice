@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI Web", "UI Web", "{67DF09
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{138B4C80-BFC3-4D89-850F-7BC8A5F83F28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSShopping.UI.Web", "CSShopping.UI.Web\CSShopping.UI.Web.csproj", "{A0E228E5-4EDD-484C-A047-EE89BB951320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSShopping.UI.Web", "CSShopping.UI.Web\CSShopping.UI.Web.csproj", "{A0E228E5-4EDD-484C-A047-EE89BB951320}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSShopping.ProductAPI", "CSShopping.ProductAPI\CSShopping.ProductAPI.csproj", "{17CDECAB-F193-465C-B2FA-174AAE2780F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSShopping.ProductAPI", "CSShopping.ProductAPI\CSShopping.ProductAPI.csproj", "{17CDECAB-F193-465C-B2FA-174AAE2780F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

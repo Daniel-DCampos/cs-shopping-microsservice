@@ -32,7 +32,7 @@ namespace CSShopping.ProductAPI.Controllers
             return Ok(product);
         }
 
-        [HttpPost("[Action]")]
+        [HttpPost]
         public async Task<IActionResult> Create(ProductViewModel productViewModel)
         {
             try
@@ -47,7 +47,7 @@ namespace CSShopping.ProductAPI.Controllers
             }
         }
 
-        [HttpPut("[Action]")]
+        [HttpPut]
         public async Task<IActionResult> Update(ProductViewModel productViewModel)
         {
             try
@@ -62,7 +62,7 @@ namespace CSShopping.ProductAPI.Controllers
             }
         }
 
-        [HttpDelete("[Action]/{id:long}")]
+        [HttpDelete("{id:long}")]
         public async Task<IActionResult> Delete(long id)
         {
             try

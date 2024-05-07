@@ -1,7 +1,16 @@
+using CSShopping.UI.Web.Services;
+using CSShopping.UI.Web.Services.IServices;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient<IProductService, ProductService>(c =>
+{
+    c.BaseAddress = new Uri(configuration["ServiceUrls:ProductAPI"]);
+});
 
 var app = builder.Build();
 

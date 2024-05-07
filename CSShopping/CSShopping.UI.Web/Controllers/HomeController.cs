@@ -1,4 +1,5 @@
 ﻿using CSShopping.UI.Web.Models;
+using CSShopping.UI.Web.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,15 +7,17 @@ namespace CSShopping.UI.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IProductService _productService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IProductService productService)
         {
-            _logger = logger;
+            _productService = productService;
         }
 
-        public IActionResult Index()
+
+        public async Task<IActionResult> Index()
         {
+            //var teste = await _productService.FindAllProducts();
             return View();
         }
 

@@ -18,7 +18,7 @@ builder.Services.AddSwaggerGen(c =>
 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CSShopping.ProductAPI", Version = "v1" });
 });
 
-builder.Services.AddDbContext<MySQLContext>(options =>
+builder.Services.AddDbContext<SQLServerContext>(options =>
 {
     options.UseSqlServer(configuration["SqlConnection:sqlConnectionString"]);
 });

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CSShopping.ProductAPI.Migrations
 {
-    [DbContext(typeof(MySQLContext))]
+    [DbContext(typeof(SQLServerContext))]
     [Migration("20240322023519_ProductModel")]
     partial class ProductModel
     {

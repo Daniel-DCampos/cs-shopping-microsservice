@@ -2,10 +2,10 @@
 
 namespace CSShopping.ProductAPI.Model.Context
 {
-    public class MySQLContext : DbContext
+    public class SQLServerContext : DbContext
     {
-        public MySQLContext() {}
-        public MySQLContext(DbContextOptions<MySQLContext> options) : base(options) {}
+        public SQLServerContext() {}
+        public SQLServerContext(DbContextOptions<SQLServerContext> options) : base(options) {}
 
         public DbSet<Product> Products { get; set; }
 

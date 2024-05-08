@@ -8,9 +8,9 @@ namespace CSShopping.ProductAPI.Repository
 {
     public class ProductRepository : IProductRepository
     {
-        private MySQLContext _context;
+        private SQLServerContext _context;
         private IMapper _mapper;
-        public ProductRepository(MySQLContext context, IMapper mapper)
+        public ProductRepository(SQLServerContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
